@@ -1,26 +1,26 @@
 {
-  "name": "pocketxy",
+  "name": "magturning",
   "version": "0.0.1",
-  "description": "pocket xy",
+  "description": "magturning",
   "author": {
     "name": "xeecos",
     "email": "flashindream@gmail.com"
   },
   "homepage": "http://yeakong.com",
-  "main": "../client/build/app/app.js",
+  "main": "../dist/app.bundle.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "publish": "electron-builder"
   },
   "build": {
-    "appId": "com.yeakong.pocketxy",
-    "productName": "PocketXY",
+    "appId": "com.yeakong.magturning",
+    "productName": "MagTurning",
     "compression": "normal",
     "copyright": "Copyright � 2017 Yeakong.com",
     "directories": {
       "buildResources": "build",
       "output": "releases",
-      "app": "../client"
+      "app": "../"
     },
     "win": {
       "target": [
@@ -28,7 +28,8 @@
           "target": "nsis",
           "arch": ["x64"]
         }
-      ]
+      ],
+      "files": ["!builder"]
     },
     "mac": {
       "category": "public.app-category.developer-tools",
@@ -53,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.oschina.net/xeecos/PocketXY"
+    "url": "https://github.com/xeecos/MagTurning"
   },
-  "keywords": ["serial", "cnc"],
+  "keywords": ["serial", "mag"],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
