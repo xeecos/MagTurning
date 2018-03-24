@@ -1,0 +1,39 @@
+{
+    "name": "MagTurning",
+    "version": "1.0.0",
+    "main": "dist/app.bundle.js",
+    "repository": "https://github.com/xeecos/MagTurning",
+    "author": "xeecos <flashindream@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "electron .",
+        "watch": "webpack --watch --color",
+        "rebuild": "electron-rebuild ."
+    },
+    "dependencies": {
+        "jquery": "^3.2.1",
+        "md5": "^2.2.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-router-dom": "^4.2.2",
+        "serialport": "^6.1.1"
+    },
+    "devDependencies": {
+        "antd": "^3.3.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-import": "^1.6.7",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^0.28.9",
+        "electron": "^1.7.10",
+        "electron-rebuild": "^1.7.3",
+        "file-loader": "^1.1.10",
+        "mini-css-extract-plugin": "^0.2.0",
+        "node-loader": "^0.6.0",
+        "style-loader": "^0.19.1",
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.12",
+        "webpack-dev-server": "^3.1.1"
+    }
+}

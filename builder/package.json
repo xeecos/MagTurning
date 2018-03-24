@@ -1,0 +1,64 @@
+{
+  "name": "pocketxy",
+  "version": "0.0.1",
+  "description": "pocket xy",
+  "author": {
+    "name": "xeecos",
+    "email": "flashindream@gmail.com"
+  },
+  "homepage": "http://yeakong.com",
+  "main": "../client/build/app/app.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "publish": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yeakong.pocketxy",
+    "productName": "PocketXY",
+    "compression": "normal",
+    "copyright": "Copyright � 2017 Yeakong.com",
+    "directories": {
+      "buildResources": "build",
+      "output": "releases",
+      "app": "../client"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        {
+          "target": "dmg"
+        }
+      ]
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "build/linux/"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "buildDependenciesFromSource": false,
+    "nodeGypRebuild": false,
+    "buildVersion": "1",
+    "electronVersion": "1.7.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/xeecos/PocketXY"
+  },
+  "keywords": ["serial", "cnc"],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.7.9"
+  }
+}
