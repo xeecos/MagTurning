@@ -59,10 +59,11 @@ export default class Main extends React.Component {
         ":" +
         ("0" + date.getSeconds()).substr(-2, 2);
       var data = this.state.counts.join("|");
+      console.log(now + "|" + data + "\n");
       fs.appendFileSync(this.file, now + "|" + data + "\n");
       this.clearMessages();
     } catch (err) {
-      /* Handle the error */
+      console.log(err);
     }
   }
   clickRecord(e) {
@@ -70,9 +71,10 @@ export default class Main extends React.Component {
       this.file =
         this.getUserHome() + "/desktop/mag_data/" + this.getNow() + ".csv";
       this.state.interval = setInterval(
-        this.appendRecord,
+        this.appendRecord.bind(this),
         this.state.intervalTime * 60000
       );
+      console.log(this.file, this.state.interval);
     } else {
       clearInterval(this.state.interval);
     }
@@ -105,6 +107,7 @@ export default class Main extends React.Component {
     }
   }
   clearMessages() {
+    this.state.counts = [0, 0, 0, 0, 0, 0, 0, 0];
     this.refs.devices.sendMessage("reset\n");
     this.refs.messages.clearMessages();
   }

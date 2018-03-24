@@ -27,7 +27,7 @@ function createWindow() {
   mainWindow.loadURL(`file://${$dirname}/../dist/index.html`);
   Menu.setApplicationMenu(null);
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
   mainWindow.on("closed", function() {
     mainWindow = null;
   });
