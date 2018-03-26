@@ -1,4 +1,5 @@
 # MagTurning
+![1.jpg](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/1.jpg)
 ```
 
 mCore---                                |---Slot1<---->Hall Sensor 1<---->Magnet 1
