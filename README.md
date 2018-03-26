@@ -12,7 +12,7 @@ mCore---                                |---Slot1<---->Hall Sensor
        |
        |                                |---Slot1<---->Hall Sensor 5<---->Magnet 5
        |---Port3<---->Me RJ25 Adapter---|
-       |                                |---Slot2<---->Hall Senso 6r<---->Magnet 6
+       |                                |---Slot2<---->Hall Sensor 6<---->Magnet 6
        |
        |                                |---Slot1<---->Hall Sensor 7<---->Magnet 7
        |---Port4<---->Me RJ25 Adapter---|
