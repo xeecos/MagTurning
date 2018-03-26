@@ -1,8 +1,19 @@
 # MagTurning
 ```
 
-mCore---                                |---Slot1<---->Hall Sensor<---->Magnet
+mCore---                                |---Slot1<---->Hall Sensor 1<---->Magnet 1
        |---Port1<---->Me RJ25 Adapter---|
-       |                                |---Slot2<---->Hall Sensor<---->Magnet
-       |---Port2
+       |                                |---Slot2<---->Hall Sensor 2<---->Magnet 2
+       |
+       |                                |---Slot1<---->Hall Sensor 3<---->Magnet 3
+       |---Port2<---->Me RJ25 Adapter---|
+       |                                |---Slot2<---->Hall Sensor 4<---->Magnet 4
+       |
+       |                                |---Slot1<---->Hall Sensor 5<---->Magnet 5
+       |---Port3<---->Me RJ25 Adapter---|
+       |                                |---Slot2<---->Hall Senso 6r<---->Magnet 6
+       |
+       |                                |---Slot1<---->Hall Sensor 7<---->Magnet 7
+       |---Port4<---->Me RJ25 Adapter---|
+                                        |---Slot2<---->Hall Sensor 8<---->Magnet 8
 ```
