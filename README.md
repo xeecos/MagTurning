@@ -17,3 +17,11 @@ mCore---                                |---Slot1<---->Hall Sensor
        |---Port4<---->Me RJ25 Adapter---|
                                         |---Slot2<---->Hall Sensor 8<---->Magnet 8
 ```
+
+###
+
+```
+                            |---S1/2 <----> OUT---|
+Me RJ25 Adapter---Slot1/2---|---GND  <----> GND---|---Hall Sensor
+                            |---VCC  <---->  5V---|
+```
