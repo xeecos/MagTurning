@@ -26,3 +26,9 @@ mCore---                                |---Slot1<---->Hall Sensor
 Me RJ25 Adapter---Slot1/2---|---GND  <----> GND---|---Hall Sensor
                             |---VCC  <---->  5V---|
 ```
+
+![mcore](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/2.jpg)
+
+![rj25 adapter](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/3.jpg)
+
+![hall sensor](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/4.jpg)
