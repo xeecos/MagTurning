@@ -6,6 +6,8 @@ String str = "";
 void setup()
 {
     Serial.begin(115200);
+    pinMode(13, OUTPUT);
+    digitalWrite(13,LOW);
     for (int i = 0; i < 8; i++)
     {
         pinMode(pins[i], INPUT_PULLUP);
