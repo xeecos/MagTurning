@@ -1,8 +1,8 @@
 # MagTurning
-### How To:
+### How To Launch Desktop Software:
 1. install nodejs
 2. npm install
-3. npm run build
+3. npm run watch && npm start
 
 ![1.jpg](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/1.jpg)
 ```
