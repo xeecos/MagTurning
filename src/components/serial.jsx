@@ -118,7 +118,7 @@ export default class DeviceSelector extends React.Component {
         >
           <a className="ant-dropdown-link" href="#" style={{ fontSize: 14 }}>
             {this.currentIndex == -1
-              ? "未连接"
+              ? "Disconnected"
               : this.ports[this.currentIndex].comName}{" "}
             <Icon type="down" />
           </a>

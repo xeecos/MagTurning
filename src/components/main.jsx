@@ -135,8 +135,8 @@ export default class Main extends React.Component {
               defaultValue={6}
               min={1}
               max={100}
-              formatter={value => `${value}分钟`}
-              parser={value => value.replace("分钟", "")}
+              formatter={value => `${value} min`}
+              parser={value => value.replace(" min", "")}
               onChange={this.onChange.bind(this)}
             />
           </div>
@@ -146,7 +146,7 @@ export default class Main extends React.Component {
               icon="poweroff"
               onClick={this.clickRecord.bind(this)}
             >
-              {!this.state.recording ? "开始记录" : "停止记录"}
+              {!this.state.recording ? "Start Recording" : "Stop Recording"}
             </Button>
           </div>
         </div>
