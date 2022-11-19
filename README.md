@@ -1,4 +1,10 @@
 # MagTurning
+### Research
+ * Small animal running-wheel activity (RWA) device is used to circadian rhythm research, but the commercial price is high. Here we described how to DIY a simple and intelligent programming rodent RWA device. The running wheel and the Hall-effect sensor was fixed to the cage and the cage cover. The main control board was attached to the computer with the USB cable. Following the steps in this documentation, data were acquired using open-source Magturning in this project. Actogram (https:// www.circadian.org/softwar.html) was used to analysis the output data.
+Actogram. 
+ * Condition: ﻿housing mice in a 12 h light: 12 h dark cycle
+![20221119090704.jpg](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/20221119090704.jpg)
+
 ### How To Launch Desktop Software:
 1. install nodejs v8.11.3
 2. npm install
@@ -39,7 +45,3 @@ Me RJ25 Adapter---Slot1/2---|---GND  <----> GND---|---Hall Sensor
 
 ![hall sensor](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/4.jpg)
 
-### Research
- * Small animal running-wheel activity (RWA) device is used to circadian rhythm research, but the commercial price is high. Here we described how to DIY a simple and intelligent programming rodent RWA device. The running wheel and the Hall-effect sensor was fixed to the cage and the cage cover. The main control board was attached to the computer with the USB cable. Following the steps in this documentation, data were acquired using open-source Magturning in this project. Actogram (https:// www.circadian.org/softwar.html) was used to analysis the output data.
-Actogram. 
- * Condition: ﻿housing mice in a 12 h light: 12 h dark cycle
