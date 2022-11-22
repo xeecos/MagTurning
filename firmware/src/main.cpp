@@ -6,6 +6,7 @@ String str = "";
 void setup()
 {
     Serial.begin(115200);
+    pinMode(A6,INPUT);//for light sensor
     pinMode(13, OUTPUT);
     digitalWrite(13,LOW);
     for (int i = 0; i < 8; i++)
@@ -54,9 +55,9 @@ void loop()
         for (int i = 0; i < 8; i++)
         {
             str += counts[i];
-            if (i < 7)
-                str += ",";
+            str += ",";
         }
+        str += analogRead(A6);
         Serial.println(str);
     }
 }
