@@ -28,7 +28,9 @@ mCore---                                  |---Slot1 <----> Hall Se
        |
        |                                  |---Slot1 <----> Hall Sensor 7 <----> Magnet 7
        |---Port4 <----> Me RJ25 Adapter---|
-                                          |---Slot2 <----> Hall Sensor 8 <----> Magnet 8
+       |                                  |---Slot2 <----> Hall Sensor 8 <----> Magnet 8
+       |
+       |---Light Sensor on Board
 ```
 
 ### Wiring
