@@ -8,7 +8,7 @@ export default class Main extends React.Component {
     super();
     this.state = {
       received: "",
-      counts: [0, 0, 0, 0, 0, 0, 0, 0],
+      counts: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       recording: false,
       intervalTime: 6,
       interval: 0
@@ -90,8 +90,8 @@ export default class Main extends React.Component {
       var arr = this.state.received.split("\n");
       if (arr.length > 1) {
         var counts = arr[0].split(",");
-        if (counts.length == 8) {
-          for (var i = 0; i < counts.length; i++) {
+        if (counts.length >= 8) {
+          for (var i = 0; i < 8; i++) {
             counts[i] = Math.floor(counts[i] / 2);
           }
           if (this.state.counts != counts) {
@@ -107,7 +107,7 @@ export default class Main extends React.Component {
     }
   }
   clearMessages() {
-    this.state.counts = [0, 0, 0, 0, 0, 0, 0, 0];
+    this.state.counts = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     this.refs.devices.sendMessage("reset\n");
     this.refs.messages.clearMessages();
   }
