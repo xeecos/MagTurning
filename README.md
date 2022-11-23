@@ -7,8 +7,9 @@ Actogram.
 
 ### How To Launch Desktop Software:
 1. install nodejs v8.11.3
-2. npm install
-3. npm run watch && npm start
+2. install ch340 dirver: http://www.wch-ic.com/products/CH340.html
+3. npm install
+4. npm run watch && npm start
 
 ### Hardware
 ![1.jpg](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/1.jpg)
