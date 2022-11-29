@@ -6,9 +6,13 @@ Actogram.
 ![20221119090704.jpg](https://raw.githubusercontent.com/xeecos/MagTurning/master/images/20221119090704.jpg)
 
 ### How To Launch Desktop Software:
-1. install nodejs v8.11.3
-2. install ch340 dirver: http://www.wch-ic.com/products/CH340.html
-3. npm install
+1. Install ch340 dirver: http://www.wch-ic.com/products/CH340.html
+2. Install from https://github.com/xeecos/MagTurning/releases
+
+### How To Build From Source Code:
+1. install nodejs v10.15.2
+2. npm install
+3. npm run rebuild
 4. npm run watch && npm start
 
 ### Hardware
