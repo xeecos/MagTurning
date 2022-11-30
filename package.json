@@ -7,8 +7,10 @@
     "license": "MIT",
     "scripts": {
         "start": "electron .",
-        "watch": "webpack --watch --color",
-        "rebuild": "electron-rebuild ."
+        "watch": "webpack --watch --color --progress",
+        "rebuild": "electron-rebuild . --arch=ia32 --version=1.7.10",
+        "rebuild-for-x64": "electron-rebuild . --arch=x64 --version=1.7.10",
+        "packager": "electron-packager ./dist --electron-version=1.7.10 --platform=win32 --arch=ia32 --icon=installer.ico --overwrite=true --out=releases --ignore=\"(libs|src|installer|releases|scripts|gulpfile.js|README.md|build.iss|webpack.config.js|webpack.prod.config.js|yarn-error.log|__pycache__|build)\"  --no-prune"
     },
     "dependencies": {
         "jquery": "^3.2.1",
@@ -27,13 +29,13 @@
         "babel-preset-react": "^6.24.1",
         "css-loader": "^0.28.9",
         "electron": "^1.7.10",
+        "electron-packager": "^15.4.0",
         "electron-rebuild": "^1.7.3",
         "file-loader": "^1.1.10",
         "mini-css-extract-plugin": "^0.2.0",
         "node-loader": "^0.6.0",
         "style-loader": "^0.19.1",
         "webpack": "^4.1.1",
-        "webpack-cli": "^2.0.12",
-        "webpack-dev-server": "^3.1.1"
+        "webpack-cli": "^3.0.0"
     }
 }

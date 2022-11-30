@@ -32,10 +32,10 @@ module.exports = [{
                 }
             ]
         },
-        target: "electron-main",
         externals: {
             serialport: "commonjs serialport"
         },
+        target: "electron-main",
         plugins: [
             new webpack.DefinePlugin({
                 $dirname: "__dirname"

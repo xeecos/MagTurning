@@ -24,7 +24,7 @@ function createWindow() {
 
   console.log(path.join($dirname, "/../"));
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${$dirname}/../dist/index.html`);
+  mainWindow.loadURL(`file://${$dirname}/index.html`);
   Menu.setApplicationMenu(null);
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
